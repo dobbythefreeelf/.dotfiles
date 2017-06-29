@@ -1,0 +1,7 @@
+--ignore-case
+--ignore-dir=node_modules
+--type-set=coffee=.coffee
+--type-set=haml=.haml
+--type-set=css=.sass,.scss,.css
+--type-set=rb=.rb
+--type-set=erb=.erb

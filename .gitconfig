@@ -1,0 +1,15 @@
+[user]
+	name = rowan
+	email = rowanu@gmail.com
+[alias]
+  hist = log --pretty=format:\"%C(yellow)%h%Cblue%d%Creset %s %C(green) %an, %ar%Creset\" --graph --date=short
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[push]
+	default = simple
+[credential]
+	helper = !aws codecommit credential-helper $@
+	UseHttpPath = true
