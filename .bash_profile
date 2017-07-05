@@ -31,26 +31,13 @@ if command -v aws > /dev/null; then
   complete -C `which aws_completer` aws
 fi
 
-_apex()  {
-  COMPREPLY=()
-  local cur="${COMP_WORDS[COMP_CWORD]}"
-  local opts="$(apex autocomplete -- ${COMP_WORDS[@]:1})"
-  COMPREPLY=( $(compgen -W "${opts}" -- ${cur})  )
-  return 0
-}
-
-complete -F _apex apex
-
 # Machine-specific setup below
-
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
 # export PYTHONPATH=`brew --prefix`/lib/python2.7/site-packages:$PYTHONPATH
 
-eval "$(rbenv init -)"
-
-export HOMEBREW_CASK_OPTS=--caskroom=/opt/homebrew-cask/Caskroom
+# eval "$(rbenv init -)"
 
 export PATH=node_modules/.bin:$HOME/go/bin:$PATH:$HOME/bin
 
