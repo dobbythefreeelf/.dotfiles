@@ -26,5 +26,21 @@
 
 ## To Do
 
-* Automate OSX changes a la https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 * Move fonts to brew (rather than submodule)
+
+### MacOS
+
+* Remap caps lock > control
+* Tmux profile > use Solarized Dark
+* Messages:
+  ```
+  ./.macos
+  Password:
+  Password:
+  Set: Entry, ":FK_StandardViewSettings:IconViewSettings:showItemInfo", Does Not Exist
+  Set: Entry, ":FK_StandardViewSettings:IconViewSettings:arrangeBy", Does Not Exist
+  Set: Entry, ":FK_StandardViewSettings:IconViewSettings:gridSpacing", Does Not Exist
+  Set: Entry, ":FK_StandardViewSettings:IconViewSettings:iconSize", Does Not Exist
+  410:479: execution error: Terminal got an error: The file /Users/rowan/init/Solarized Dark xterm-256color.terminal does not exist. (1)
+  Done. Note that some of these changes require a logout/restart to take effect.
+  ```
