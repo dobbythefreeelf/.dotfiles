@@ -26,7 +26,11 @@
 
 ## To Do
 
-* Move fonts to brew (rather than submodule)
+* iTerm2 settings: font family/size, colour scheme
+* Spectacle access and startup
+* Re-map capslock to ctrl
+* Do not show display mirroring options in menubar
+* Show battery percentage
 
 ### MacOS
 
