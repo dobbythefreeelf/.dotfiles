@@ -9,6 +9,14 @@
   stow .
   ```
 
+### ESLint
+
+Install globally so that individual package setup not required:
+
+```
+npm install -g eslint eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
+```
+
 ## Additional Mac Steps
 
 1. Copy SSH keys
