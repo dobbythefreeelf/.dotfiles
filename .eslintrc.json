@@ -1,14 +1,11 @@
 {
   "env": {
     "browser": true,
-      "node": true
-  },
-  "globals": {
-    "Promise": false
+    "node": true
   },
   "rules": {
-    "comma-dangle": ["error", "always-multiline"]
+    "comma-dangle": ["error", "always-multiline"],
+    "no-undef": "error"
   },
-  plugins: ["vue"],
  "extends": "standard"
 }
