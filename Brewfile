@@ -7,6 +7,7 @@ tap 'homebrew/core'
 tap 'homebrew/devel-only'
 tap 'versent/taps'
 
+brew 'docker'
 brew 'ctags'
 brew 'exiftool'
 brew 'gdrive'
