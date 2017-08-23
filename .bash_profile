@@ -26,9 +26,7 @@ if [ -f ~/.git-copmletion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-function awsprofile() {
-  export AWS_DEFAULT_PROFILE=$@; export AWS_PROFILE=$@;
-}
+function awsprofile() { export AWS_DEFAULT_PROFILE=$@; export AWS_PROFILE=$@; }
 if command -v aws > /dev/null; then
   complete -C `which aws_completer` aws
 fi
