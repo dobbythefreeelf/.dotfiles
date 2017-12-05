@@ -80,6 +80,7 @@ call plug#end()
 " ## Filetype Configurations
 autocmd BufNewFile,BufRead *.md,*.markdown setlocal spell
 autocmd BufNewFile,BufRead *.md,*.markdown setlocal textwidth=0 wrapmargin=0
+autocmd BufNewFile,BufRead *.template setlocal filetype=yaml
 autocmd FileType css setlocal foldmethod=indent shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal foldmethod=syntax shiftwidth=2 tabstop=2
 autocmd FileType python setlocal foldmethod=indent shiftwidth=4 tabstop=4
