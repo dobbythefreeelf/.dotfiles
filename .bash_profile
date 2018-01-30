@@ -39,6 +39,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # eval "$(rbenv init -)"
 
-export PATH=node_modules/.bin:$HOME/go/bin:$PATH:$HOME/bin
+export GOPATH=$(go env GOPATH)
+export PATH=node_modules/.bin:$GOPATH/bin:$PATH:$HOME/bin
 
 # Don't commit below this line

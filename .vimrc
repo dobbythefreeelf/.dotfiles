@@ -84,6 +84,7 @@ autocmd BufNewFile,BufRead *.template setlocal filetype=yaml
 autocmd FileType css setlocal foldmethod=indent shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal foldmethod=syntax shiftwidth=2 tabstop=2
 autocmd FileType python setlocal foldmethod=indent shiftwidth=4 tabstop=4
+autocmd FileType go setlocal foldmethod=indent shiftwidth=4 tabstop=4
 autocmd FileType ruby setlocal foldmethod=indent shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal foldmethod=indent
 autocmd FileType json setlocal foldmethod=indent
@@ -142,6 +143,7 @@ let g:go_highlight_fields=1
 let g:go_highlight_types=1
 let g:go_highlight_operators=1
 let g:go_highlight_build_constraints=1
+let g:go_fmt_command='goimports' " Auto-add imports
 " Completor
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

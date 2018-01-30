@@ -7,5 +7,7 @@
     "comma-dangle": ["error", "always-multiline"],
     "no-undef": "error"
   },
- "extends": "standard"
+  "extends": [
+    "standard"
+  ]
 }
